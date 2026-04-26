@@ -11,3 +11,5 @@ def get_song_by_id(id):
         if song["id"] == id:
             return song
     return None
+def filter_by_artist(artist):
+    return [s for s in songs if s["artist"] == artist]
